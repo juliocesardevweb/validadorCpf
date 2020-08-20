@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validador de CPF</title>
+</head>
+
+<body>
+  <style>
+    label {
+      display: block;
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: bold;
+      margin: 10px 0 5px 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 5x;
+      border: 2px solid black;
+      border-radius: 5px;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+
+    input::placeholder {
+      color: rgba(0, 0, 0, 0.2);
+    }
+
+    input.erro {
+      border-color: red;
+    }
+
+    input.ok {
+      border-color: green;
+    }
+
+    .erroText {
+      display: none;
+      font-family: 'IBM Plex Mono';
+      font-size: .875rem;
+      color: red;
+    }
+
+    .erroText.active {
+      display: block;
+    }
+
+    .ok-active {
+      display: none;
+      font-family: 'IBM Plex Mono';
+      font-size: .875rem;
+      color: green;
+    }
+
+    .ok-active.active {
+      display: block;
+    }
+  </style>
+  <h1>Validador de CPF</h1>
+  <form action="">
+    <label for="cpf">CPF</label>
+    <input type="text" name="cpf" id="cpf" placeholder="◘◘◘.◘◘◘.◘◘◘-◘◘">
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email">
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
